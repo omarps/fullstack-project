@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.thecatapi.com/v1/favourites
+    body:
+      encoding: UTF-8
+      string: '{"image_id":"1","sub_id":"example@gmail.com"}'
+    headers:
+      User-Agent:
+      - Faraday v1.7.2
+      Content-type:
+      - application/json
+      x-api-key:
+      - token [CATS_API_KEY]
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      x-dns-prefetch-control:
+      - 'off'
+      x-frame-options:
+      - SAMEORIGIN
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-download-options:
+      - noopen
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - 1; mode=block
+      vary:
+      - Origin
+      content-type:
+      - application/json; charset=utf-8
+      x-response-time:
+      - 501ms
+      x-cloud-trace-context:
+      - b20225c08edccb2c214c7011bd8d0c5f
+      date:
+      - Sun, 31 Oct 2021 18:45:00 GMT
+      server:
+      - Google Frontend
+      content-length:
+      - '34'
+    body:
+      encoding: UTF-8
+      string: '{"message":"SUCCESS","id":2138617}'
+  recorded_at: Sun, 31 Oct 2021 18:45:00 GMT
+recorded_with: VCR 6.0.0
